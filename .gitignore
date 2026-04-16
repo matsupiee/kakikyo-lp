@@ -49,3 +49,6 @@ coverage
 .cache
 tmp
 temp
+
+# Claude Code worktrees (separate git checkouts created by /worktree)
+.claude/worktrees/
