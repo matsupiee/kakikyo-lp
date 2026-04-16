@@ -1,7 +1,8 @@
 import { createServerFn } from "@tanstack/react-start";
 import { env } from "cloudflare:workers";
 
-import { SYSTEM_PROMPT } from "../components/chatbot/system-prompt";
+import { SYSTEM_PROMPTS } from "../components/chatbot/system-prompt";
+import { DEFAULT_LOCALE, isLocale, type Locale } from "../i18n/index";
 
 const GEMINI_MODEL = "gemini-2.5-flash";
 const GEMINI_ENDPOINT = `https://generativelanguage.googleapis.com/v1beta/models/${GEMINI_MODEL}:generateContent`;
@@ -16,8 +17,17 @@ export type ChatMessage = {
   text: string;
 };
 
+export type ChatErrorCode =
+  | "configMissing"
+  | "network"
+  | "rateLimited"
+  | "generationFailed"
+  | "safetyBlocked"
+  | "invalidRequest";
+
 type ChatRequest = {
   messages: ChatMessage[];
+  locale: Locale;
 };
 
 type GeminiResponse = {
@@ -31,7 +41,7 @@ type GeminiResponse = {
 
 function validate(data: unknown): ChatRequest {
   if (!data || typeof data !== "object") throw new Error("invalid_request");
-  const { messages } = data as { messages?: unknown };
+  const { messages, locale } = data as { messages?: unknown; locale?: unknown };
   if (!Array.isArray(messages) || messages.length === 0) throw new Error("invalid_request");
 
   const trimmed: ChatMessage[] = messages.slice(-MAX_HISTORY).map((m) => {
@@ -46,7 +56,9 @@ function validate(data: unknown): ChatRequest {
   });
 
   if (trimmed[trimmed.length - 1]?.role !== "user") throw new Error("last_must_be_user");
-  return { messages: trimmed };
+  const resolvedLocale: Locale =
+    typeof locale === "string" && isLocale(locale) ? locale : DEFAULT_LOCALE;
+  return { messages: trimmed, locale: resolvedLocale };
 }
 
 export const chat = createServerFn({ method: "POST" })
@@ -54,15 +66,12 @@ export const chat = createServerFn({ method: "POST" })
   .handler(async ({ data }) => {
     const apiKey = env.GEMINI_API_KEY;
     if (!apiKey) {
-      return {
-        ok: false as const,
-        error: "チャット機能の設定が未完了です。お電話（0776-23-0595）でお問い合わせくださいませ。",
-      };
+      return { ok: false as const, errorCode: "configMissing" as ChatErrorCode };
     }
 
     const body = {
       systemInstruction: {
-        parts: [{ text: SYSTEM_PROMPT }],
+        parts: [{ text: SYSTEM_PROMPTS[data.locale] }],
       },
       contents: data.messages.map((m) => ({
         role: m.role,
@@ -82,19 +91,13 @@ export const chat = createServerFn({ method: "POST" })
         body: JSON.stringify(body),
       });
     } catch {
-      return {
-        ok: false as const,
-        error: "通信に失敗しました。しばらくしてから再度お試しくださいませ。",
-      };
+      return { ok: false as const, errorCode: "network" as ChatErrorCode };
     }
 
     if (!response.ok) {
       return {
         ok: false as const,
-        error:
-          response.status === 429
-            ? "ただいま混み合っております。少しお待ちいただくか、お電話（0776-23-0595）でお問い合わせくださいませ。"
-            : "お返事を生成できませんでした。お手数ですが再度お試しくださいませ。",
+        errorCode: (response.status === 429 ? "rateLimited" : "generationFailed") as ChatErrorCode,
       };
     }
 
@@ -104,10 +107,9 @@ export const chat = createServerFn({ method: "POST" })
     if (!text.trim()) {
       return {
         ok: false as const,
-        error:
-          json.promptFeedback?.blockReason === "SAFETY"
-            ? "申し訳ございませんが、そのご質問にはお答えできません。"
-            : "お返事を生成できませんでした。お手数ですが再度お試しくださいませ。",
+        errorCode: (json.promptFeedback?.blockReason === "SAFETY"
+          ? "safetyBlocked"
+          : "generationFailed") as ChatErrorCode,
       };
     }
 
