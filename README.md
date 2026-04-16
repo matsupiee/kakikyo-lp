@@ -53,13 +53,12 @@ import { Button } from "@kakikyo-lp/ui/components/button";
 
 If you want to add app-specific blocks instead of shared primitives, run the shadcn CLI from `apps/web`.
 
-## Deployment (Cloudflare via Alchemy)
+## Deployment (Cloudflare Workers via Wrangler)
 
-- Dev: cd apps/web && bun run alchemy dev
-- Deploy: cd apps/web && bun run deploy
-- Destroy: cd apps/web && bun run destroy
+- Dev: `bun run dev:web`
+- Deploy: `bun run deploy` (builds then runs `wrangler deploy` in `apps/web`)
 
-For more details, see the guide on [Deploying to Cloudflare with Alchemy](https://www.better-t-stack.dev/docs/guides/cloudflare-alchemy).
+Worker configuration lives in `apps/web/wrangler.jsonc`. See the [TanStack Start on Cloudflare Workers guide](https://developers.cloudflare.com/workers/framework-guides/web-apps/tanstack-start/).
 
 ## Git Hooks and Formatting
 

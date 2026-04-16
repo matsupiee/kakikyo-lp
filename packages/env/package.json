@@ -13,7 +13,6 @@
   },
   "devDependencies": {
     "@kakikyo-lp/config": "workspace:*",
-    "@kakikyo-lp/infra": "workspace:*",
     "typescript": "^5"
   }
 }
