@@ -1,10 +1,10 @@
 type Props = {
-  jp: string;
-  en: string;
+  eyebrow: string;
+  main: string;
   tone?: "light" | "dark";
 };
 
-export default function SectionHeading({ jp, en, tone = "light" }: Props) {
+export default function SectionHeading({ eyebrow, main, tone = "light" }: Props) {
   const isDark = tone === "dark";
   return (
     <div className="relative flex flex-col items-center text-center">
@@ -20,7 +20,7 @@ export default function SectionHeading({ jp, en, tone = "light" }: Props) {
           isDark ? "text-background/60" : "text-muted-foreground",
         ].join(" ")}
       >
-        {en}
+        {eyebrow}
       </p>
       <h2
         className={[
@@ -28,7 +28,7 @@ export default function SectionHeading({ jp, en, tone = "light" }: Props) {
           isDark ? "text-background" : "text-foreground",
         ].join(" ")}
       >
-        {jp}
+        {main}
       </h2>
       <span
         aria-hidden

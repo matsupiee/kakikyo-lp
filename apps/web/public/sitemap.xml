@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+  xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml"
+>
+  <url>
+    <loc>https://kakikyo.jp/</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://kakikyo.jp/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://kakikyo.jp/en" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://kakikyo.jp/zh-tw" />
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://kakikyo.jp/zh-cn" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://kakikyo.jp/es" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://kakikyo.jp/" />
+  </url>
+  <url>
+    <loc>https://kakikyo.jp/en</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://kakikyo.jp/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://kakikyo.jp/en" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://kakikyo.jp/zh-tw" />
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://kakikyo.jp/zh-cn" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://kakikyo.jp/es" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://kakikyo.jp/" />
+  </url>
+  <url>
+    <loc>https://kakikyo.jp/zh-tw</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://kakikyo.jp/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://kakikyo.jp/en" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://kakikyo.jp/zh-tw" />
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://kakikyo.jp/zh-cn" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://kakikyo.jp/es" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://kakikyo.jp/" />
+  </url>
+  <url>
+    <loc>https://kakikyo.jp/zh-cn</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://kakikyo.jp/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://kakikyo.jp/en" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://kakikyo.jp/zh-tw" />
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://kakikyo.jp/zh-cn" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://kakikyo.jp/es" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://kakikyo.jp/" />
+  </url>
+  <url>
+    <loc>https://kakikyo.jp/es</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://kakikyo.jp/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://kakikyo.jp/en" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://kakikyo.jp/zh-tw" />
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://kakikyo.jp/zh-cn" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://kakikyo.jp/es" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://kakikyo.jp/" />
+  </url>
+</urlset>
