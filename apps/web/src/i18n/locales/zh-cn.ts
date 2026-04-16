@@ -218,7 +218,7 @@ export const zhCn: Dictionary = {
     inputAriaLabel: "消息输入",
     sendAriaLabel: "发送",
     openAriaLabel: "打开对话",
-    footerReservePrefix: "预约请来电",
+    footerReservePrefix: "预约请来电 ",
     footerReserveSuffix: "",
     errors: {
       network: "连接失败，请稍后再试。",

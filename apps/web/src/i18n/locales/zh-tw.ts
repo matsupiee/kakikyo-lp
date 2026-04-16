@@ -218,7 +218,7 @@ export const zhTw: Dictionary = {
     inputAriaLabel: "訊息輸入",
     sendAriaLabel: "送出",
     openAriaLabel: "開啟對話",
-    footerReservePrefix: "預約請來電",
+    footerReservePrefix: "預約請來電 ",
     footerReserveSuffix: "",
     errors: {
       network: "連線失敗，請稍後再試。",

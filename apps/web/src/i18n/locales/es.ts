@@ -233,7 +233,7 @@ export const es: Dictionary = {
     inputAriaLabel: "Entrada de mensaje",
     sendAriaLabel: "Enviar",
     openAriaLabel: "Abrir chat",
-    footerReservePrefix: "Reservas al teléfono",
+    footerReservePrefix: "Reservas al teléfono ",
     footerReserveSuffix: "",
     errors: {
       network: "Error de conexión. Por favor, inténtelo de nuevo en un momento.",

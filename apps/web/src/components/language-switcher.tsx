@@ -31,14 +31,21 @@ export default function LanguageSwitcher({ variant = "desktop", onNavigate }: Pr
     };
   }, [open]);
 
-  const hrefFor = (lc: Locale): string => {
-    const hash = typeof window !== "undefined" ? window.location.hash : "";
-    return localePath(lc, hash);
-  };
-
-  const handleNavigate = () => {
+  // Avoid reading window.location.hash during render (SSR/CSR drift).
+  // Render the bare locale path for SSR/crawlers, then capture the current
+  // hash in the click handler so regular navigations preserve scroll position.
+  const handleClick = (lc: Locale) => (e: React.MouseEvent<HTMLAnchorElement>) => {
+    if (e.defaultPrevented || e.metaKey || e.ctrlKey || e.shiftKey || e.button !== 0) return;
+    const hash = window.location.hash;
+    if (!hash) {
+      setOpen(false);
+      onNavigate?.();
+      return;
+    }
+    e.preventDefault();
     setOpen(false);
     onNavigate?.();
+    window.location.href = localePath(lc, hash);
   };
 
   if (variant === "mobile") {
@@ -49,10 +56,10 @@ export default function LanguageSwitcher({ variant = "desktop", onNavigate }: Pr
           return (
             <a
               key={lc}
-              href={hrefFor(lc)}
+              href={localePath(lc)}
               aria-current={isCurrent ? "page" : undefined}
               aria-label={DICTIONARIES[lc].languageSwitcher.switchTo}
-              onClick={handleNavigate}
+              onClick={handleClick(lc)}
               className={[
                 "inline-flex items-center border px-3 py-2 text-xs tracking-[0.15em]",
                 isCurrent
@@ -100,10 +107,10 @@ export default function LanguageSwitcher({ variant = "desktop", onNavigate }: Pr
               <li key={lc} role="none">
                 <a
                   role="menuitem"
-                  href={hrefFor(lc)}
+                  href={localePath(lc)}
                   aria-current={isCurrent ? "page" : undefined}
                   aria-label={DICTIONARIES[lc].languageSwitcher.switchTo}
-                  onClick={handleNavigate}
+                  onClick={handleClick(lc)}
                   className={[
                     "block px-4 py-2.5 text-sm tracking-[0.1em] transition-colors",
                     isCurrent

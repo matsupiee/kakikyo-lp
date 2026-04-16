@@ -4,7 +4,6 @@ import { useLocale, useT } from "@/i18n/provider";
 export default function Hero() {
   const t = useT();
   const locale = useLocale();
-  const brandIsJa = t.brand.name === "かき恭";
 
   return (
     <section id="top" className="relative h-svh min-h-[680px] w-full overflow-hidden">
@@ -35,7 +34,7 @@ export default function Hero() {
             className="absolute -top-3 left-1/2 h-px w-14 -translate-x-1/2 bg-white/60"
           />
           <h1
-            lang={brandIsJa ? "ja" : undefined}
+            lang="ja"
             className="font-serif-jp text-6xl leading-none tracking-[0.35em] text-white md:text-8xl"
           >
             {t.brand.name}

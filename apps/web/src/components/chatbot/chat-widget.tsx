@@ -150,11 +150,11 @@ export default function ChatWidget() {
         </form>
 
         <p className="border-t border-border bg-background px-3 py-2 text-center text-[0.65rem] tracking-wider text-muted-foreground">
-          {t.chatbot.footerReservePrefix}{" "}
+          {t.chatbot.footerReservePrefix}
           <a href={phoneTel} className="underline-offset-2 hover:text-accent hover:underline">
             {t.contact.phoneDisplay}
           </a>
-          {t.chatbot.footerReserveSuffix ? ` ${t.chatbot.footerReserveSuffix}` : ""}
+          {t.chatbot.footerReserveSuffix}
         </p>
       </div>
 
