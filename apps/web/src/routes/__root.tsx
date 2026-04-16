@@ -2,6 +2,7 @@ import { Toaster } from "@kakikyo-lp/ui/components/sonner";
 import { HeadContent, Outlet, Scripts, createRootRouteWithContext } from "@tanstack/react-router";
 import { TanStackRouterDevtools } from "@tanstack/react-router-devtools";
 
+import ChatWidget from "../components/chatbot/chat-widget";
 import Header from "../components/header";
 import Footer from "../components/footer";
 
@@ -58,6 +59,7 @@ function RootDocument() {
           <Footer />
         </div>
         <Toaster richColors />
+        <ChatWidget />
         <TanStackRouterDevtools position="bottom-left" />
         <Scripts />
       </body>
