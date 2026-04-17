@@ -8,6 +8,7 @@
     "preview": "vite preview",
     "deploy": "bun run build && wrangler deploy",
     "cf-typegen": "wrangler types",
+    "check-types": "tsc --noEmit",
     "test": "vitest run",
     "test:watch": "vitest"
   },
