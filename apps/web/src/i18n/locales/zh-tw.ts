@@ -39,6 +39,7 @@ export const zhTw: Dictionary = {
     taglineLines: ["冬日，獻上牡蠣料理。", "四季，以會席款待。", "於寂靜之中，層疊時令。"],
     ctaAbout: "關於本店",
     ctaReserve: "預約 · 0776-23-0595",
+    reassurance: ["2 位起", "備有包廂", "當日諮詢亦可"],
     scroll: "Scroll",
   },
   concept: {
@@ -184,11 +185,16 @@ export const zhTw: Dictionary = {
       "我們將聽取人數、預算與需求，",
       "為您備妥一席，靜候光臨。",
     ],
+    reassurance: "當日預約亦歡迎來電詢問。2 位起即可為您安排包廂。",
     phoneCallLabel: "電話接受預約",
     tapToCall: "輕點來電",
     hoursNote: "接受預約 17:00 – 22:00 ／ 週日・國定假日公休",
     ctaReserve: "電話預約",
     ctaAccess: "查看交通",
+  },
+  stickyCta: {
+    label: "立即來電預約",
+    ariaLabel: "來電預約",
   },
   footer: {
     taglineLines: [

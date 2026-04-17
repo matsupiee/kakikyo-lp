@@ -29,6 +29,10 @@ export default function Reservation() {
           ))}
         </p>
 
+        <p className="mx-auto mt-8 max-w-xl border border-background/20 bg-background/5 px-6 py-4 font-serif-jp text-[0.85rem] leading-[2] tracking-wider text-background/90 md:text-sm">
+          {t.reservation.reassurance}
+        </p>
+
         <div className="mt-14 flex flex-col items-center gap-6">
           <p className="text-[0.65rem] tracking-[0.4em] text-background/50 uppercase">
             {t.reservation.phoneCallLabel}

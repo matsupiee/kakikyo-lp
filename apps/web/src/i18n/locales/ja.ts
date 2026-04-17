@@ -37,6 +37,7 @@ export const ja = {
     taglineLines: ["冬は、牡蛎料理。", "四季は、会席。", "静けさに、旬を重ねて。"],
     ctaAbout: "お店について",
     ctaReserve: "ご予約 0776-23-0595",
+    reassurance: ["2名様〜", "個室完備", "当日ご相談承ります"],
     scroll: "Scroll",
   },
   concept: {
@@ -181,11 +182,17 @@ export const ja = {
       "ご人数、ご予算、ご要望などを伺いながら、",
       "ごゆるりと過ごせる一席を整えてお待ち申し上げます。",
     ],
+    reassurance:
+      "当日予約もどうぞお気軽にお問い合わせくださいませ。2 名様より個室をご用意いたします。",
     phoneCallLabel: "お電話にて承ります",
     tapToCall: "Tap to call",
     hoursNote: "受付 17:00 – 22:00 ／ 定休日 日曜・祝日",
     ctaReserve: "電話で予約する",
     ctaAccess: "アクセスを見る",
+  },
+  stickyCta: {
+    label: "今すぐ電話で予約",
+    ariaLabel: "電話でご予約",
   },
   footer: {
     taglineLines: [

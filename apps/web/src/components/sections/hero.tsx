@@ -67,6 +67,17 @@ export default function Hero() {
             {t.hero.ctaReserve}
           </a>
         </div>
+
+        <ul className="mt-8 flex flex-wrap items-center justify-center gap-x-5 gap-y-2 text-[0.7rem] tracking-[0.25em] text-white/80">
+          {t.hero.reassurance.map((item, i) => (
+            <li key={i} className="flex items-center gap-5">
+              {i > 0 && (
+                <span aria-hidden className="hidden h-px w-4 bg-white/40 sm:inline-block" />
+              )}
+              <span className="font-serif-jp">{item}</span>
+            </li>
+          ))}
+        </ul>
       </div>
 
       <div className="absolute bottom-8 left-1/2 -translate-x-1/2 text-white/70">

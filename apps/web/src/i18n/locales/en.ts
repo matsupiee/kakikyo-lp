@@ -44,6 +44,7 @@ export const en: Dictionary = {
     ],
     ctaAbout: "About us",
     ctaReserve: "Reserve · 0776-23-0595",
+    reassurance: ["From 2 guests", "Private rooms", "Same-day enquiries welcome"],
     scroll: "Scroll",
   },
   concept: {
@@ -198,11 +199,17 @@ export const en: Dictionary = {
       "We will hear your party size, budget and requests,",
       "and prepare a seat where you may pass time unhurried.",
     ],
+    reassurance:
+      "Please feel free to enquire about same-day reservations. Private rooms available from parties of 2.",
     phoneCallLabel: "By telephone",
     tapToCall: "Tap to call",
     hoursNote: "Reception 17:00 – 22:00 / Closed Sundays & holidays",
     ctaReserve: "Reserve by phone",
     ctaAccess: "View access",
+  },
+  stickyCta: {
+    label: "Call to reserve",
+    ariaLabel: "Call to reserve",
   },
   footer: {
     taglineLines: [
