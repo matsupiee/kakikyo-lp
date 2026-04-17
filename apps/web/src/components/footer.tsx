@@ -7,7 +7,7 @@ export default function Footer() {
   const year = new Date().getFullYear();
 
   return (
-    <footer className="bg-sumi text-background">
+    <footer className="bg-sumi pb-20 text-background md:pb-0">
       <div className="mx-auto grid max-w-6xl gap-12 px-6 py-20 md:grid-cols-[1fr_1fr] md:px-10">
         <div>
           <p lang="ja" className="font-serif-jp text-3xl tracking-[0.25em]">

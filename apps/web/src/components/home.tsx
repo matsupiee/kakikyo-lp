@@ -5,6 +5,7 @@ import Gallery from "./sections/gallery";
 import Hero from "./sections/hero";
 import Info from "./sections/info";
 import Reservation from "./sections/reservation";
+import StickyCta from "./sticky-cta";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
       <Info />
       <Access />
       <Reservation />
+      <StickyCta />
     </>
   );
 }

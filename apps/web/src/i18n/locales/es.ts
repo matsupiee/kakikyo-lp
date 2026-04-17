@@ -44,6 +44,7 @@ export const es: Dictionary = {
     ],
     ctaAbout: "Sobre nosotros",
     ctaReserve: "Reservar · 0776-23-0595",
+    reassurance: ["Desde 2 personas", "Reservados privados", "Consultas el mismo día"],
     scroll: "Scroll",
   },
   concept: {
@@ -198,11 +199,17 @@ export const es: Dictionary = {
       "Escucharemos el tamaño del grupo, el presupuesto y sus deseos,",
       "y prepararemos un lugar donde pasar el tiempo con calma.",
     ],
+    reassurance:
+      "No dude en consultarnos también por reservas del mismo día. Reservado privado disponible desde 2 comensales.",
     phoneCallLabel: "Por teléfono",
     tapToCall: "Toque para llamar",
     hoursNote: "Recepción 17:00 – 22:00 / Cerrado domingos y festivos",
     ctaReserve: "Reservar por teléfono",
     ctaAccess: "Ver acceso",
+  },
+  stickyCta: {
+    label: "Reservar por teléfono",
+    ariaLabel: "Reservar por teléfono",
   },
   footer: {
     taglineLines: [
