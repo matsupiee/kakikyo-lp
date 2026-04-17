@@ -25,11 +25,11 @@ export const es: Dictionary = {
     addressRomaji: "3-10-8 Chūō, Fukui-shi, Fukui 910-0006, Japan",
   },
   nav: {
-    concept: { primary: "Filosofía", sub: "Concept" },
-    cuisine: { primary: "Cocina", sub: "Cuisine" },
-    gallery: { primary: "Galería", sub: "Gallery" },
-    info: { primary: "Información", sub: "Information" },
-    access: { primary: "Acceso", sub: "Access" },
+    concept: { primary: "Filosofía", sub: "Omotenashi" },
+    cuisine: { primary: "Cocina", sub: "Oryōri" },
+    gallery: { primary: "Galería", sub: "Shashin" },
+    info: { primary: "Información", sub: "Tenpo Annai" },
+    access: { primary: "Acceso", sub: "Akusesu" },
     reserveDesktop: "Reservar · 0776-23-0595",
     reserveMobile: "Llamar para reservar · 0776-23-0595",
     openMenu: "Abrir menú",
@@ -47,7 +47,7 @@ export const es: Dictionary = {
     scroll: "Scroll",
   },
   concept: {
-    heading: { eyebrow: "Concept", main: "Nuestra filosofía" },
+    heading: { eyebrow: "Omotenashi", main: "Nuestra filosofía" },
     titleLines: ["Las estaciones de Fukui,", "ofrecidas con delicadeza en cada plato."],
     paragraphs: [
       [
@@ -71,7 +71,7 @@ export const es: Dictionary = {
     year: "1924",
   },
   cuisine: {
-    heading: { eyebrow: "Cuisine", main: "Nuestra cocina" },
+    heading: { eyebrow: "Oryōri", main: "Nuestra cocina" },
     leadLines: [
       "Tesoros del mar de Japón, dones del interior de Echizen.",
       "Ingredientes de temporada, convertidos en kaiseki en cada estación.",
@@ -114,7 +114,7 @@ export const es: Dictionary = {
     ],
   },
   gallery: {
-    heading: { eyebrow: "Gallery", main: "Galería" },
+    heading: { eyebrow: "Shashin", main: "Galería" },
     lead: "Platos que cambian con las estaciones, y momentos de calma en nuestras salas.",
     photos: [
       { jp: "牡蛎", label: "Oyster" },
@@ -127,7 +127,7 @@ export const es: Dictionary = {
     ],
   },
   info: {
-    heading: { eyebrow: "Information", main: "Información" },
+    heading: { eyebrow: "Tenpo Annai", main: "Información" },
     rows: [
       { label: "Nombre", value: "Kappō Ryōtei Kakikyō (かき恭)", sub: "" },
       { label: "Género", value: "Kaiseki · Kappō / Cocina de ostras / Temporada", sub: "" },
@@ -174,7 +174,7 @@ export const es: Dictionary = {
     },
   },
   access: {
-    heading: { eyebrow: "Access", main: "Acceso" },
+    heading: { eyebrow: "Akusesu", main: "Acceso" },
     mapTitle: "Kappō Ryōtei Kakikyō — mapa",
     locationLabel: "Dirección",
     addressLines: ["〒910-0006", "福井県福井市中央 3-10-8"],

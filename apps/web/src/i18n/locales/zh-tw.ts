@@ -24,11 +24,11 @@ export const zhTw: Dictionary = {
     addressRomaji: "3-10-8 Chūō, Fukui-shi, Fukui 910-0006, Japan",
   },
   nav: {
-    concept: { primary: "款待之心", sub: "Concept" },
-    cuisine: { primary: "本店料理", sub: "Cuisine" },
-    gallery: { primary: "相簿", sub: "Gallery" },
-    info: { primary: "店家資訊", sub: "Information" },
-    access: { primary: "交通", sub: "Access" },
+    concept: { primary: "款待之心", sub: "Omotenashi" },
+    cuisine: { primary: "本店料理", sub: "Oryōri" },
+    gallery: { primary: "相簿", sub: "Shashin" },
+    info: { primary: "店家資訊", sub: "Tenpo Annai" },
+    access: { primary: "交通", sub: "Akusesu" },
     reserveDesktop: "預約 · 0776-23-0595",
     reserveMobile: "來電預約 · 0776-23-0595",
     openMenu: "開啟選單",
@@ -42,7 +42,7 @@ export const zhTw: Dictionary = {
     scroll: "Scroll",
   },
   concept: {
-    heading: { eyebrow: "Concept", main: "款待之心" },
+    heading: { eyebrow: "Omotenashi", main: "款待之心" },
     titleLines: ["將福井的時令，", "溫柔託付於一盤之中。"],
     paragraphs: [
       [
@@ -63,7 +63,7 @@ export const zhTw: Dictionary = {
     year: "1924",
   },
   cuisine: {
-    heading: { eyebrow: "Cuisine", main: "本店料理" },
+    heading: { eyebrow: "Oryōri", main: "本店料理" },
     leadLines: ["日本海的海味，越前里山的恩澤。", "以時令食材，織就四季會席。"],
     courses: [
       {
@@ -103,7 +103,7 @@ export const zhTw: Dictionary = {
     ],
   },
   gallery: {
-    heading: { eyebrow: "Gallery", main: "相簿" },
+    heading: { eyebrow: "Shashin", main: "相簿" },
     lead: "隨四季流轉的料理，與座敷靜謐的片刻。",
     photos: [
       { jp: "牡蛎", label: "Oyster" },
@@ -116,7 +116,7 @@ export const zhTw: Dictionary = {
     ],
   },
   info: {
-    heading: { eyebrow: "Information", main: "店家資訊" },
+    heading: { eyebrow: "Tenpo Annai", main: "店家資訊" },
     rows: [
       { label: "店名", value: "割烹料亭 Kakikyō", sub: "" },
       { label: "類別", value: "懷石・會席料理 ／ 牡蠣料理 ／ 季節料理", sub: "" },
@@ -163,7 +163,7 @@ export const zhTw: Dictionary = {
     },
   },
   access: {
-    heading: { eyebrow: "Access", main: "交通" },
+    heading: { eyebrow: "Akusesu", main: "交通" },
     mapTitle: "割烹料亭 Kakikyō 地圖",
     locationLabel: "地址",
     addressLines: ["〒910-0006", "福井県福井市中央 3-10-8"],

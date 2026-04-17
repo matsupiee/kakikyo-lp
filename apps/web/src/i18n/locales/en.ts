@@ -25,11 +25,11 @@ export const en: Dictionary = {
     addressRomaji: "3-10-8 Chūō, Fukui-shi, Fukui 910-0006, Japan",
   },
   nav: {
-    concept: { primary: "Concept", sub: "おもてなし" },
-    cuisine: { primary: "Cuisine", sub: "お料理" },
-    gallery: { primary: "Gallery", sub: "写真" },
-    info: { primary: "Information", sub: "店舗案内" },
-    access: { primary: "Access", sub: "アクセス" },
+    concept: { primary: "Concept", sub: "Omotenashi" },
+    cuisine: { primary: "Cuisine", sub: "Oryōri" },
+    gallery: { primary: "Gallery", sub: "Shashin" },
+    info: { primary: "Information", sub: "Tenpo Annai" },
+    access: { primary: "Access", sub: "Akusesu" },
     reserveDesktop: "Reserve · 0776-23-0595",
     reserveMobile: "Call to reserve · 0776-23-0595",
     openMenu: "Open menu",
@@ -47,7 +47,7 @@ export const en: Dictionary = {
     scroll: "Scroll",
   },
   concept: {
-    heading: { eyebrow: "おもてなし", main: "Our Concept" },
+    heading: { eyebrow: "Omotenashi", main: "Our Concept" },
     titleLines: ["Fukui's seasons,", "gently offered on a single plate."],
     paragraphs: [
       [
@@ -71,7 +71,7 @@ export const en: Dictionary = {
     year: "1924",
   },
   cuisine: {
-    heading: { eyebrow: "お料理", main: "Our Cuisine" },
+    heading: { eyebrow: "Oryōri", main: "Our Cuisine" },
     leadLines: [
       "Treasures of the Sea of Japan, blessings of the Echizen countryside.",
       "Seasonal ingredients, woven into kaiseki for every season.",
@@ -114,7 +114,7 @@ export const en: Dictionary = {
     ],
   },
   gallery: {
-    heading: { eyebrow: "写真", main: "Gallery" },
+    heading: { eyebrow: "Shashin", main: "Gallery" },
     lead: "Dishes that shift with the seasons, and quiet moments in our private rooms.",
     photos: [
       { jp: "牡蛎", label: "Oyster" },
@@ -127,9 +127,9 @@ export const en: Dictionary = {
     ],
   },
   info: {
-    heading: { eyebrow: "店舗案内", main: "Information" },
+    heading: { eyebrow: "Tenpo Annai", main: "Information" },
     rows: [
-      { label: "Name", value: "Kappō Ryōtei Kakikyō (かき恭)", sub: "" },
+      { label: "Name", value: "Kappō Ryōtei Kakikyō", sub: "" },
       { label: "Genre", value: "Kaiseki · Kappō / Oyster Cuisine / Seasonal", sub: "" },
       {
         label: "Address",
@@ -174,7 +174,7 @@ export const en: Dictionary = {
     },
   },
   access: {
-    heading: { eyebrow: "アクセス", main: "Access" },
+    heading: { eyebrow: "Akusesu", main: "Access" },
     mapTitle: "Kappō Ryōtei Kakikyō — map",
     locationLabel: "Address",
     addressLines: ["〒910-0006", "福井県福井市中央 3-10-8"],
