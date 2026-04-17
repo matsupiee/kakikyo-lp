@@ -2,10 +2,10 @@ import type { Dictionary } from "../dictionary";
 
 export const zhCn: Dictionary = {
   meta: {
-    title: "割烹料亭 かき恭 | 福井・牡蛎料理与四季会席",
+    title: "割烹料亭 Kakikyō | 福井・牡蛎料理与四季会席",
     description:
-      "位于福井・福井城址大名町的割烹料亭「かき恭」。承继自创业以来的技艺与本地时令，冬季以牡蛎料理，四季以会席料理款待。恭候您的预约。",
-    ogTitle: "割烹料亭 かき恭",
+      "位于福井・福井城址大名町的割烹料亭「Kakikyō」。承继自创业以来的技艺与本地时令，冬季以牡蛎料理，四季以会席料理款待。恭候您的预约。",
+    ogTitle: "割烹料亭 Kakikyō",
     ogDescription: "福井・福井城址大名町，冬季牡蛎料理与四季会席的割烹料亭。",
   },
   brand: {
@@ -24,11 +24,11 @@ export const zhCn: Dictionary = {
     addressRomaji: "3-10-8 Chūō, Fukui-shi, Fukui 910-0006, Japan",
   },
   nav: {
-    concept: { primary: "款待之心", sub: "おもてなし" },
-    cuisine: { primary: "本店料理", sub: "お料理" },
-    gallery: { primary: "相册", sub: "写真" },
-    info: { primary: "店家信息", sub: "店舗案内" },
-    access: { primary: "交通", sub: "アクセス" },
+    concept: { primary: "款待之心", sub: "Omotenashi" },
+    cuisine: { primary: "本店料理", sub: "Oryōri" },
+    gallery: { primary: "相册", sub: "Shashin" },
+    info: { primary: "店家信息", sub: "Tenpo Annai" },
+    access: { primary: "交通", sub: "Akusesu" },
     reserveDesktop: "预约 · 0776-23-0595",
     reserveMobile: "来电预约 · 0776-23-0595",
     openMenu: "打开菜单",
@@ -42,12 +42,12 @@ export const zhCn: Dictionary = {
     scroll: "Scroll",
   },
   concept: {
-    heading: { eyebrow: "おもてなし", main: "款待之心" },
+    heading: { eyebrow: "Omotenashi", main: "款待之心" },
     titleLines: ["将福井的时令，", "温柔托付于一盘之中。"],
     paragraphs: [
       [
         "自大正年间创业以来，岁月层叠近百年。",
-        "かき恭将北陆・福井的海、山与田里之惠，",
+        "Kakikyō 将北陆・福井的海、山与田里之惠，",
         "细致映照于每一碗、每一碟。",
       ],
       [
@@ -63,7 +63,7 @@ export const zhCn: Dictionary = {
     year: "1924",
   },
   cuisine: {
-    heading: { eyebrow: "お料理", main: "本店料理" },
+    heading: { eyebrow: "Oryōri", main: "本店料理" },
     leadLines: ["日本海的海味，越前里山的恩泽。", "以时令食材，编织四季会席。"],
     courses: [
       {
@@ -73,7 +73,7 @@ export const zhCn: Dictionary = {
         price: "¥12,100 (JPY)",
         note: "含税・另收席料与服务费",
         description:
-          "由日本海浪涛孕育、肉质紧实的牡蛎，分以生食、炙烧、酥炸与锅物呈现于一膳。细细品味冬日之奢，为かき恭招牌会席。",
+          "由日本海浪涛孕育、肉质紧实的牡蛎，分以生食、炙烧、酥炸与锅物呈现于一膳。细细品味冬日之奢，为 Kakikyō 招牌会席。",
       },
       {
         name: "四季会席",
@@ -103,7 +103,7 @@ export const zhCn: Dictionary = {
     ],
   },
   gallery: {
-    heading: { eyebrow: "写真", main: "相册" },
+    heading: { eyebrow: "Shashin", main: "相册" },
     lead: "随四季流转的料理，与座敷静谧的片刻。",
     photos: [
       { jp: "牡蛎", label: "Oyster" },
@@ -116,9 +116,9 @@ export const zhCn: Dictionary = {
     ],
   },
   info: {
-    heading: { eyebrow: "店舗案内", main: "店家信息" },
+    heading: { eyebrow: "Tenpo Annai", main: "店家信息" },
     rows: [
-      { label: "店名", value: "割烹料亭 かき恭（Kakikyō）", sub: "" },
+      { label: "店名", value: "割烹料亭 Kakikyō", sub: "" },
       { label: "类别", value: "怀石・会席料理 ／ 牡蛎料理 ／ 季节料理", sub: "" },
       {
         label: "地址",
@@ -163,8 +163,8 @@ export const zhCn: Dictionary = {
     },
   },
   access: {
-    heading: { eyebrow: "アクセス", main: "交通" },
-    mapTitle: "割烹料亭 かき恭 地图",
+    heading: { eyebrow: "Akusesu", main: "交通" },
+    mapTitle: "割烹料亭 Kakikyō 地图",
     locationLabel: "地址",
     addressLines: ["〒910-0006", "福井県福井市中央 3-10-8"],
     addressRomaji: "3-10-8 Chūō, Fukui-shi, Fukui 910-0006, Japan",
@@ -208,9 +208,9 @@ export const zhCn: Dictionary = {
     switchTo: "切换至简体中文",
   },
   chatbot: {
-    welcome: "欢迎光临かき恭。营业时间、预约、菜单、交通等，欢迎随时询问。",
-    dialogAriaLabel: "かき恭 咨询对话",
-    headerTitle: "かき恭 咨询",
+    welcome: "欢迎光临 Kakikyō。营业时间、预约、菜单、交通等，欢迎随时询问。",
+    dialogAriaLabel: "Kakikyō 咨询对话",
+    headerTitle: "Kakikyō 咨询",
     headerSubtitle: "AI Concierge",
     closeAriaLabel: "关闭对话",
     thinking: "…正在准备回复",
