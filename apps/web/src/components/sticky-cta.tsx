@@ -9,7 +9,7 @@ export default function StickyCta() {
     <a
       href={telHref(locale, t.contact.phoneDisplay)}
       aria-label={t.stickyCta.ariaLabel}
-      className="fixed bottom-0 left-0 right-20 z-40 flex items-center justify-between gap-3 bg-sumi py-3 pl-5 pr-5 text-background shadow-[0_-10px_30px_-15px_rgba(0,0,0,0.5)] md:hidden"
+      className="fixed bottom-0 left-0 right-24 z-40 flex items-center justify-between gap-3 bg-sumi px-5 py-3 text-background shadow-[0_-10px_30px_-15px_rgba(0,0,0,0.5)] md:hidden"
     >
       <span className="flex items-center gap-3">
         <svg
